@@ -10,6 +10,12 @@ def isGreaterThanZero(x):
     else:
         return False
 
+def isEqualToZero(x):
+    if x==0:
+        return True
+    else:
+        return False
+
 isContinue = True
 while(isContinue):
 
@@ -19,8 +25,8 @@ while(isContinue):
     # assert(5<2);
 
     if variable == 1:
-        v = float(input("Ingrese v: "));
-        t = float(input("Ingrese ∆t: "));
+        v = float(input("Ingrese v: "))
+        t = float(input("Ingrese ∆t: "))
 
         if isPositive(t):
             print(f"El resultado de ∆x es: {v*t} m")
@@ -28,16 +34,16 @@ while(isContinue):
             print("No existe el tiempo negativo")
 
     elif variable == 2:
-        v = float(input("Ingrese v: "));
-        x = float(input("Ingrese ∆x: "));
-        if isGreaterThanZero(v):
+        v = float(input("Ingrese v: "))
+        x = float(input("Ingrese ∆x: "))
+        if isEqualToZero(v):
             print(f"El resultado de ∆x es: {x/v} s")
         else:
             print("No se puede hacer la division entre 0")
             
     elif variable == 3:
-        x = float(input("Ingrese ∆x: "));
-        t = float(input("Ingrese ∆t: "));
+        x = float(input("Ingrese ∆x: "))
+        t = float(input("Ingrese ∆t: "))
         if isGreaterThanZero(t):
             print(f"El resultado de v es: {x/t} m/s")
         else:
