@@ -45,5 +45,7 @@ while(isContinue):
             
     else:
         print("Elija una opción válida")
-    print(f"Desea obtener otro valor? (Yes=y): ")
+    value = input(f"Desea obtener otro valor? (Yes=y) (No=n): ")
+    if value=="n":
+        isContinue = False
 
