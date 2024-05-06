@@ -1,6 +1,7 @@
 # Introduccion 
 # Conclusion
 
+# Hacer el programa iterativo (do while)
 
 # Primera practica:
 1. En caso de no resolver un problema, explicar el porqué
