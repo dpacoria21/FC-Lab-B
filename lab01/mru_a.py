@@ -36,7 +36,7 @@ while(isContinue):
     elif variable == 2:
         v = float(input("Ingrese v: "))
         x = float(input("Ingrese ∆x: "))
-        if isEqualToZero(v):
+        if not isEqualToZero(v):
             print(f"El resultado de ∆x es: {x/v} s")
         else:
             print("No se puede hacer la division entre 0")

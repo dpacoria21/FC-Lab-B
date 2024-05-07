@@ -48,8 +48,7 @@ while(isContinue):
             else:
                 print(f"No existe el tiempo negativo")
         else:   
-            else:
-                print("No existe la división entre 0")
+            print("No existe la división entre 0")
             
     elif variable == "3":
         vf = float(input("Ingrese Vf: "))

@@ -1,4 +1,6 @@
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 
 def isPositive(x):
     if x>=0:
@@ -18,6 +20,17 @@ def isPossibleToGet(b, a, c):
     else:
         return [True, (-b+math.sqrt(b*b - 4*a*c))/(2*a)]
 
+def calculateX(v, a, t):
+    return v*t + (a*t*t)/2
+
+def matplot_graph(x, y, xlabel, ylabel, title):
+    plt.plot(x, y)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.grid(True)
+    plt.show()
+
 isContinue = True
 while(isContinue):
 
@@ -33,6 +46,8 @@ while(isContinue):
 
         if isPositive(t):
             print(f"El resultado de ∆x es: {v*t + (a*t*t)/2} m")
+            tnp = np.linspace(0, t, 100)
+            matplot_graph(tnp, calculateX(v, a, tnp) , 'Tiempo (s)', 'Desplazamiento (m)', 'Gráfico de Desplazamiento vs Tiempo')
         else:
             print("No existe el tiempo negativo")
 
@@ -70,6 +85,8 @@ while(isContinue):
     else:
         print("Elija una opción válida")
         continue
+
+
     value = input(f"Desea obtener otro valor? (Yes=y) (No=n): ")
     if value=="n" or value=="No" or value=="no" or value=="NO":
         print("Gracias por usar el programa!!!")
