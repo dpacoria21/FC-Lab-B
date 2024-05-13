@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 
 # Definimos las cargas como una lista de tuplas, donde cada tupla representa una carga.
 # Cada tupla tiene tres elementos: (posición_x, posición_y, magnitud_de_la_carga)
-cargas = [(-2, 0, -10), (2, 0, 10)]
+# q = [posx, posy, carga electrica]
+# cargas = [q1, q2, ...]
+cargas = [(-2, 0, 10), (2, 0, -25)]
 
 # Definimos las posiciones del campo en el plano XY
 pos_x1, pos_y1 = -5, -5
