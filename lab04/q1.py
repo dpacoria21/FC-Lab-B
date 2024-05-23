@@ -1,4 +1,4 @@
-# !pip install magpylib==2.3.0b0
+# !pip install magpylib==2.3.0b0  TODO: usar  esto en google colab
 
 # Antes de correr el codigo usar TODO: pip install magpylib==2.3.0b0
 import numpy as np
